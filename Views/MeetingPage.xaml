@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.MeetingPage"
+             x:Name="MeetingPage1"
+             Shell.NavBarIsVisible="False">
+
+    <ContentView BackgroundColor="Transparent">
+        <StackLayout>
+            <Image IsAnimationPlaying="True" Source="https://i.imgur.com/PBQw255.png" WidthRequest="180" HeightRequest="180" HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 190, 0, 0"></Image>
+            <Label FontFamily="Jost1" Text="Kidney" FontSize="45" TextColor="#5BA2EA" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+            <Label FontFamily="Jost1" Text="Health" FontSize="45" TextColor="#5BA2EA" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+
+            <Button FontFamily="Jost1" BackgroundColor="#6587FF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Войти" TextColor="#FFFFFF" Margin="0, 50, 0, 0" Clicked="Button_Clicked"></Button>
+            <Button FontFamily="Jost1" BackgroundColor="#FFFFFF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Регистрация" TextColor="#6587FF" Margin="0, 20, 0, 0" BorderColor="#6587FF" BorderWidth="2" Clicked="Button_Clicked1"></Button>
+        </StackLayout>
+    </ContentView>
+</ContentPage>

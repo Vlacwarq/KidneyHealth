@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.UserRegisterPage1">
+    <ContentPage.Content>
+        <ContentView BackgroundColor="#F8F8F8">
+            <StackLayout Padding="10,70,10,0" VerticalOptions="Fill">
+                <Label FontFamily="Jost1" WidthRequest="260" HorizontalOptions="Center" Text="Введите результаты анализов" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67"></Label>
+                <Label FontFamily="Jost1" WidthRequest="360" HorizontalOptions="Center" Text="На основе результатов анализов для вас будет составлена персональная диета" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67"></Label>
+                <ContentView HeightRequest="70" WidthRequest="360" HorizontalOptions="Center" Margin="0, 10, 0, 0">
+                    <Grid Margin="0, 30, 0, 0">
+                        <Entry FontFamily="Jost1" FontSize="16" BackgroundColor="white" Grid.Column="0" Grid.Row="0" Placeholder='Фосфор' IsPassword="False" WidthRequest="190"  />
+                        <Entry FontFamily="Jost1" FontSize="16" BackgroundColor="white" Grid.Column="1" Grid.Row="0"  Placeholder='Калий' IsPassword="False" WidthRequest="190"  />
+                    </Grid>
+                </ContentView>
+                <ContentView HeightRequest="70" WidthRequest="360" HorizontalOptions="Center" Margin="0, 10, 0, 0">
+                    <Grid Margin="0, 30, 0, 0">
+                        <Entry FontFamily="Jost1" FontSize="16" BackgroundColor="white" Grid.Column="0" Grid.Row="0" Placeholder='Кальций' IsPassword="False" WidthRequest="190"  />
+                        <Entry FontFamily="Jost1" FontSize="16" BackgroundColor="white" Grid.Column="1" Grid.Row="0"  Placeholder='Холестерин' IsPassword="False" WidthRequest="190"  />
+                    </Grid>
+                </ContentView>
+                <ContentView HeightRequest="70" WidthRequest="180" HorizontalOptions="Center" Margin="0, 10, 0, 0">
+                    <Grid Margin="0, 30, 0, 0">
+                        <Entry FontSize="16" FontFamily="Jost1" BackgroundColor="white" Grid.Column="0" Grid.Row="0" Placeholder='Кальций' IsPassword="False" WidthRequest="190"  />
+                    </Grid>
+                </ContentView>
+                <Button Clicked="Button_Clicked" FontFamily="Jost1" WidthRequest="370" CornerRadius="15" HorizontalOptions="Center" Text="Зарегистрироваться" Command="{Binding LoginCommand}" Margin="0, 50, 0, 0 " BackgroundColor="#6587FF"/>
+            </StackLayout>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

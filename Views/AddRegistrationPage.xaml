@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.AddRegistrationPage"
+             x:Name="AddRegisterPage"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Content>
+        <ContentView BackgroundColor="#F8F8F8">
+            <StackLayout Padding="10,80,10,0" VerticalOptions="Fill">
+                <Label FontFamily="Jost1" WidthRequest="300" HorizontalOptions="Center" Text="Введите ваши параметры" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67"></Label>
+                <Label FontFamily="Jost1" WidthRequest="300" HorizontalOptions="Center" Text="Для корректной работы приложения необходимо ввести город, адрес, название мед. учереждения " FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67"></Label>
+                <Entry FontFamily="Jost1" CharacterSpacing="0.5" Placeholder="Город" WidthRequest="360" HeightRequest="50" HorizontalOptions="Center" BackgroundColor="white" Margin="0, 50, 0, 0"></Entry>
+                <Entry FontFamily="Jost1" CharacterSpacing="0.5" Placeholder="Адрес" WidthRequest="360" HeightRequest="50" HorizontalOptions="Center" Margin="0, 20, 0, 0 " BackgroundColor="white"></Entry>
+                <Entry FontFamily="Jost1"  CharacterSpacing="0.5" Placeholder="Мед. Учереждение" WidthRequest="360" HeightRequest="50" HorizontalOptions="Center" Margin="0, 20, 0, 0 " BackgroundColor="white"></Entry>
+                <Button Clicked="Button_Clicked" FontFamily="Jost1" WidthRequest="360" CornerRadius="15" HorizontalOptions="Center" Text="Далее" Command="{Binding LoginCommand}" Margin="0, 70, 0, 0 " BackgroundColor="#6587FF"/>
+            </StackLayout>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

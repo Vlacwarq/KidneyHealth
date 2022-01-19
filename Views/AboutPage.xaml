@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:MyFirstApp.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <ContentView BackgroundColor="Transparent">
+            <StackLayout>
+                <Label FontFamily="Jost1" WidthRequest="410" HorizontalOptions="Center" Text="Зарегистрироваться как:" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67" Padding="0, 70, 0, 0"></Label>
+                <Image Source="https://i.imgur.com/Wf5kQWr.png" WidthRequest="450" HeightRequest="275" HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 82, 0, 0"></Image>
+
+                <Button FontFamily="Jost1" Clicked="Button_Clicked" BackgroundColor="#6587FF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Мед. учереждение" TextColor="#FFFFFF" Margin="0, 50, 0, 0" CornerRadius='6' ></Button>
+                <Button FontFamily="Jost1" Clicked="Button_Clicked_1" BackgroundColor="#FFFFFF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Пациент" TextColor="#6587FF" Margin="0, 20, 0, 0" BorderColor="#6587FF" BorderWidth="2" CornerRadius="6" ></Button>
+            </StackLayout>
+        </ContentView>
+    </Grid>
+
+</ContentPage>

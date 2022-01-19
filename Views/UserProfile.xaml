@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.UserProfile">
+    <ContentPage.Content>
+        <StackLayout>
+            <ContentView BackgroundColor="AliceBlue"  Padding="0,0,0,20">
+                <StackLayout>
+                    <Frame CornerRadius="900" WidthRequest="180" HeightRequest="180" HorizontalOptions="Center" IsClippedToBounds="True" Padding="0" Margin="0, 30, 0, 0" BorderColor="#2f2f2f" >
+                        <Image Source="https://i.imgur.com/lWEAix6.png" WidthRequest="230" HeightRequest="230"/>
+                    </Frame>
+                    <Label Text="Джеф Безо" FontSize="30" TextColor="#2f2f2f" HorizontalOptions="Center" FontFamily="Jost1"></Label>
+                </StackLayout>
+            </ContentView>
+            <ContentView>
+                <StackLayout>
+                    <Entry Placeholder="Введите Город" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" FontFamily="Jost1" FontSize="18"/>
+                    <Entry Placeholder="Введите Мед. Учереждениие" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" FontFamily="Jost1" FontSize="18"/>
+                    <Entry Placeholder="Введите ваш возраст" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" FontFamily="Jost1" FontSize="18"/>
+                    <Button FontFamily="Jost1" FontSize="14" Text="Изменить Рез-ты Анализов" WidthRequest="350" HorizontalOptions="Center" CornerRadius="15" BackgroundColor="#6587FF"/>
+                </StackLayout>
+            </ContentView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.FoodDetail2">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ScrollView WidthRequest="500" HorizontalOptions="Center" Margin="0,0,0,0" Padding="18">
+                <StackLayout>
+                    <ContentView Padding="10">
+
+                        <StackLayout >
+                            <Label Text="Завтрак, Вторник" TextColor="#2f2f2f" FontSize="26" FontFamily="Jost1" HorizontalOptions="Center" Padding="15, 5, 15, 0"></Label>
+                            <ContentView WidthRequest="500" HeightRequest="300" HorizontalOptions="Center" Padding="0">
+                                <Image Source="https://i.imgur.com/If7uB2L.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            </ContentView>
+                        </StackLayout>
+
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center">
+                        <Label WidthRequest="440" Text="1)Подготовьте продукты. Овощи и зелень хорошо вымойте и обсушите салфетками. Масло можете брать любое растительное" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="2)Если шкурка у огурцов горчит, или слишком жесткая, или вы просто хотите, чтобы готовый салат был более мягким, то срежьте ее. Также срежьте и кончики у огурцов. Сами огурцы нарежьте ломтиками небольшого размера и переложите в миску для салата." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="3)Помидоры нарежьте ломтиками примерно такого же размера и формы, как огурцы. Основания плодоножек удаляйте. Добавьте измельченные помидоры в миску к огурцам." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="4)Лук почистите и нарежьте тонкими полукольцами или четверть кольцами." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="5)Добавьте к измельченным овощам, разделив отдельные ломтики лука руками. Остается только заправить салат из помидоров с огурцом и луком растительным маслом, посолить по вкусу и добавить молотый черный перец на свое усмотрение. Не забудьте мелко нарезать и добавить свежий укроп." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="6)Перемешайте все подготовленные ингредиенты и подавайте салат сразу же после приготовления. Он вкусен именно свежим." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+
+                    <ContentView Padding="10">
+
+                        <StackLayout >
+                            <Label Text="Обед, Вторник" TextColor="#2f2f2f" FontSize="26" FontFamily="Jost1" HorizontalOptions="Center" Padding="15, 5, 15, 0"></Label>
+                            <ContentView WidthRequest="500" HeightRequest="300" HorizontalOptions="Center" Padding="0">
+                                <Image Source="https://i.imgur.com/cyzUVKI.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            </ContentView>
+                        </StackLayout>
+
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center">
+                        <Label WidthRequest="440" Text="1)Нарежьте помидоры дольками.Орехи измельчите ножом до состояния крупной крошки. " TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="2)Разогрейте сковороду гриль с растительным маслом. Посолите и поперчите тунца с двух сторон и выложите на гриль. Обжарьте стейк в течение 5 минут с каждой стороны до появления золотистой корочки, после чего дайте рыбе отдохнуть 5-10 минут." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="3)Выжмите сок из половинки лимона, добавьте оливковое масло и тщательно перемешайте заправку.Выложите на тарелку рукколу и помидоры черри." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="4)Выложите рыбу поверх овощей. Полейте салат заправкой, посолите и поперчите по вкусу, сверху посыпьте блюдо орехами. Салат готов. Приятного аппетита!" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView Padding="10">
+
+                        <StackLayout >
+                            <Label Text="Ужин, Вторник" TextColor="#2f2f2f" FontSize="26" FontFamily="Jost1" HorizontalOptions="Center" Padding="15, 5, 15, 0"></Label>
+                            <ContentView WidthRequest="500" HeightRequest="300" HorizontalOptions="Center" Padding="0">
+                                <Image Source="https://i.imgur.com/SEiy2gi.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            </ContentView>
+                        </StackLayout>
+
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center">
+                        <Label WidthRequest="440" Text="1)Заранее отварите в подсоленной воде куриное филе, остудите. Слейте маринад консервированных ананасов и кукурузы, подготовьте остальные продукты на столе для удобства." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="2)Порежьте на произвольные кусочки отваренное и остывшее куриное филе.В глубокую емкость выложите куски курицы и немного порубленный грецкий орех." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="3)Добавьте ананасы, кукурузу и майонез. Сыр натрите на крупной или мелкой терке, добавьте к салату. Посолите, поперчите по вкусу и тщательно перемешайте." TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+                    <ContentView WidthRequest="440" HorizontalOptions="Center" >
+                        <Label WidthRequest="440" Text="4)В вариантах сервировки можете использовать маленькие глубокие салатницы, либо плоские тарелки, на которые салат можно выложить просто ложкой или с помощью формы для саталов. Приятного аппетита!" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost"/>
+                    </ContentView>
+
+
+                </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

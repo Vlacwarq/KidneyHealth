@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.UserRegisterPage">
+    <ContentPage.Content>
+        <ContentView BackgroundColor="#F8F8F8">
+            <StackLayout Padding="10,70,10,0" VerticalOptions="Fill">
+                <Label FontFamily="Jost1" WidthRequest="240" HorizontalOptions="Center" Text="Введите ваши параметры" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67"></Label>
+                <Label FontFamily="Jost1" WidthRequest="300" HorizontalOptions="Center" Text="Для корректной работы приложения необходимо ввести ФИО, рост, вес, дату рождения и пол" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67"></Label>
+                <Entry FontFamily="Jost1" CharacterSpacing="0.5" Placeholder="ФИО" WidthRequest="360" HeightRequest="56" HorizontalOptions="Center" BackgroundColor="white" Margin="0, 50, 0, 0"></Entry>
+                <ContentView HeightRequest="76" WidthRequest="360" HorizontalOptions="Center" Margin="0, 20, 0, 0">
+                    <Grid Margin="0, 30, 0, 0">
+                        <Entry Keyboard="Numeric" FontFamily="Jost1" BackgroundColor="white" Grid.Column="0" Grid.Row="0" Placeholder='Рост' IsPassword="False" WidthRequest="120"  />
+                        <Entry Keyboard="Numeric" FontFamily="Jost1" BackgroundColor="white" Grid.Column="1" Grid.Row="0"  Placeholder='Вес' IsPassword="False" WidthRequest="120"  />
+                    </Grid>
+                </ContentView>
+                <Label Text="Укажите дату рождения:" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" HorizontalOptions="Center" Margin="0, 30, 0, 0"/>
+                <DatePicker FontFamily="Jost1" BackgroundColor="white"  WidthRequest="360" HeightRequest="60" HorizontalOptions="Center" Margin="0, 10, 0 ,0"/>
+                <ContentView HeightRequest="90" WidthRequest="360" HorizontalOptions="Center" Margin="0, 10, 0, 0">
+                    <Grid Margin="0, 30, 0, 0">
+                        <Button BackgroundColor="white" Grid.Column="0" Grid.Row="0" WidthRequest="190" Text="Мужской" TextColor="#727272" FontSize="15" FontFamily="Jost1" CornerRadius="15" />
+                        <Button BackgroundColor="white" Grid.Column="1" Grid.Row="0" WidthRequest="190" Text="Женский" TextColor="#727272" FontSize="15" FontFamily="Jost1" CornerRadius="15" />
+                    </Grid>
+                </ContentView>
+                <Button Clicked="Button_Clicked" FontFamily="Jost1" WidthRequest="370" CornerRadius="15" HorizontalOptions="Center" Text="Далее" Command="{Binding LoginCommand}" Margin="0, 50, 0, 0 " BackgroundColor="#6587FF"/>
+            </StackLayout>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

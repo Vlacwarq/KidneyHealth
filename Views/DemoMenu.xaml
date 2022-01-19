@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.Views.DemoMenu">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Главная" IconImageSource="https://i.imgur.com/GetYyN3.png">
+        <ContentPage.Content>
+            <StackLayout>
+                <ContentView BackgroundColor="AliceBlue" >
+                    <StackLayout>
+                       
+                        <ContentView HeightRequest="120" Padding="0,35,0,20">
+                            <StackLayout>
+
+                                <Label TextColor="#2f2f2f" Text="Водный Баланс:" FontSize='22' FontFamily="Jost1" Margin="30, 0,0,0"></Label>
+                                <ContentView HeightRequest="50">
+                                    <RelativeLayout>
+
+                                        <Label TextColor="#2f2f2f" FontSize="22" FontFamily="Jost1" Margin="30, 10, 0,0" Text="Количество выпитой воды(мл):"></Label>
+                                        <Entry TextColor="#2f2f2f" Keyboard="Numeric" FontFamily="Jost1" WidthRequest="60" Margin="330, 0, 0, 0"></Entry>
+    
+                                    </RelativeLayout>
+                                </ContentView>
+                                <Label Text="План питания на неделю:" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="20" Margin="30, 0, 0, 0"/>
+                            </StackLayout>
+                        </ContentView>
+                    </StackLayout>
+                </ContentView>   
+                    
+
+                <ScrollView>
+                    <StackLayout>
+                        <ContentView HeightRequest="230" WidthRequest="400" HorizontalOptions="CenterAndExpand">
+                            <RelativeLayout>
+                                    
+                                    <Image Source="https://i.imgur.com/4GBu5vS.png" WidthRequest="400" HeightRequest="200" Margin="0, 15,0 ,0"/>
+                                    <ContentView Margin="100, 160, 0 ,0" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="60">
+                                        <Button BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="200" HeightRequest="60" BackgroundColor="AliceBlue" Text="Понедельник" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" TextTransform="None" CornerRadius="15" />
+
+                                    </ContentView>
+                                
+                            </RelativeLayout>
+                        </ContentView>
+
+                        <ContentView HeightRequest="230" WidthRequest="400" HorizontalOptions="CenterAndExpand">
+                            <RelativeLayout>
+
+                                <Image Source="https://i.imgur.com/cyzUVKI.png" WidthRequest="400" HeightRequest="200" Margin="0, 15,0 ,0"/>
+                                <ContentView Margin="100, 160, 0 ,0" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="60">
+                                    <Button BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked_2" HorizontalOptions="Center" WidthRequest="200" HeightRequest="60" BackgroundColor="AliceBlue" Text="Вторник" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" TextTransform="None" CornerRadius="15" />
+
+                                </ContentView>
+                            </RelativeLayout>
+                        </ContentView>
+
+                        <ContentView HeightRequest="230" WidthRequest="400" HorizontalOptions="CenterAndExpand">
+                            <RelativeLayout>
+
+                                <Image Source="https://i.imgur.com/Z3XzMCL.png" WidthRequest="400" HeightRequest="200" Margin="0, 15,0 ,0"/>
+                                <ContentView Margin="100, 160, 0 ,0" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="60">
+                                    <Button BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="200" HeightRequest="60" BackgroundColor="AliceBlue" Text="Среда" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" TextTransform="None" CornerRadius="15" />
+
+                                </ContentView>
+                            </RelativeLayout>
+                        </ContentView>
+
+
+                        <ContentView HeightRequest="230" WidthRequest="400" HorizontalOptions="CenterAndExpand">
+                            <RelativeLayout>
+
+                                <Image Source="https://i.imgur.com/If7uB2L.png" WidthRequest="400" HeightRequest="200" Margin="0, 15,0 ,0"/>
+                                <ContentView Margin="100, 160, 0 ,0" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="60">
+                                    <Button BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="200" HeightRequest="60" BackgroundColor="AliceBlue" Text="Четверг" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" TextTransform="None" CornerRadius="15" />
+
+                                </ContentView>
+                            </RelativeLayout>
+                        </ContentView>
+
+                        <ContentView HeightRequest="230" WidthRequest="400" HorizontalOptions="CenterAndExpand">
+                            <RelativeLayout>
+
+                                <Image Source="https://i.imgur.com/WvvNPs4.png" WidthRequest="400" HeightRequest="200" Margin="0, 15,0 ,0"/>
+                                <ContentView Margin="100, 160, 0 ,0" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="60">
+                                    <Button BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="200" HeightRequest="60" BackgroundColor="AliceBlue" Text="Пятница" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" TextTransform="None" CornerRadius="15" />
+
+                                </ContentView>
+                            </RelativeLayout>
+                        </ContentView>
+
+                        <ContentView HeightRequest="230" WidthRequest="400" HorizontalOptions="CenterAndExpand">
+                            <RelativeLayout>
+
+                                <Image Source="https://i.imgur.com/YdDEjOc.png" WidthRequest="400" HeightRequest="200" Margin="0, 15,0 ,0"/>
+                                <ContentView Margin="100, 160, 0 ,0" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="60">
+                                    <Button BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="200" HeightRequest="60" BackgroundColor="AliceBlue" Text="Суббота" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" TextTransform="None" CornerRadius="15" />
+
+                                </ContentView>
+                            </RelativeLayout>
+                        </ContentView>
+
+                        <ContentView HeightRequest="230" WidthRequest="400" HorizontalOptions="CenterAndExpand">
+                            <RelativeLayout>
+
+                                <Image Source="https://i.imgur.com/4GBu5vS.png" WidthRequest="400" HeightRequest="200" Margin="0, 15,0 ,0"/>
+                                <ContentView Margin="100, 160, 0 ,0" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="60">
+                                    <Button BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="200" HeightRequest="60" BackgroundColor="AliceBlue" Text="Воскресенье" TextColor="#2f2f2f" FontSize="20" FontFamily="Jost1" TextTransform="None" CornerRadius="15" />
+
+                                </ContentView>
+                            </RelativeLayout>
+                        </ContentView>
+
+
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Title="Профиль" IconImageSource="https://i.imgur.com/zhWYrdM.png">
+        <ContentPage.Content>
+            <StackLayout>
+                <ContentView BackgroundColor="AliceBlue"  Padding="0,0,0,20">
+                    <StackLayout>
+                        <Frame CornerRadius="900" WidthRequest="180" HeightRequest="180" HorizontalOptions="Center" IsClippedToBounds="True" Padding="0" Margin="0, 30, 0, 0" BorderColor="#2f2f2f" >
+                            <Image Source="https://i.imgur.com/lWEAix6.png" WidthRequest="230" HeightRequest="230"/>
+                        </Frame>
+                        <Label Text="Джеф Безо" FontSize="30" TextColor="#2f2f2f" HorizontalOptions="Center" FontFamily="Jost1"></Label>
+                    </StackLayout>
+                </ContentView>
+                <ContentView>
+                    <StackLayout>
+                        <Label Text="Обновление персональных данных:" FontFamily="Jost1" FontSize="18" TextColor="#2f2f2f" WidthRequest="350" HorizontalOptions="Center"/>
+                        <Entry Placeholder="Введите Город" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" FontFamily="Jost1" FontSize="18"/>
+                        <Entry Placeholder="Введите Мед. Учереждениие" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" FontFamily="Jost1" FontSize="18"/>
+                        <Entry Placeholder="Введите ваш возраст" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" FontFamily="Jost1" FontSize="18"/>
+                        <Button FontFamily="Jost1" FontSize="14" Text="Сохранить Изменения" WidthRequest="350" HorizontalOptions="Center" CornerRadius="15" BackgroundColor="#6587FF"/>
+                    </StackLayout>
+                </ContentView>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Title="Справочник" IconImageSource="https://i.imgur.com/v9enjB5.png">
+        <ContentPage.Content>
+            <ScrollView> 
+                <StackLayout>
+                        <ContentView BackgroundColor="AliceBlue"  Padding="0,20,0,20">
+                            <StackLayout>
+                        
+                                <Label Text="Справочник" FontSize="30" TextColor="#2f2f2f" HorizontalOptions="Center" FontFamily="Jost1"></Label>
+
+                            <Label Text="Здесь вы сможете узнать больше о нашей и вашей работе" FontSize="20" TextColor="#2f2f2f" HorizontalOptions="Center" FontFamily="Jost"></Label>
+                        </StackLayout>
+                        </ContentView>
+                        <ContentView HorizontalOptions="Center">
+                            <StackLayout HorizontalOptions="Center">
+                                <Button Clicked="Button_Clicked_1" Text="Противопоказания" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            <Button Clicked="Button_Clicked_1" Text="Расшифровка Анализов" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            </StackLayout>
+                        </ContentView>
+                    <ContentView HorizontalOptions="Center">
+                        <StackLayout HorizontalOptions="Center">
+                            <Button Clicked="Button_Clicked_1" Text="Противопоказания" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            <Button Clicked="Button_Clicked_1" Text="Расшифровка Анализов" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                        </StackLayout>
+                    </ContentView>
+                    <ContentView HorizontalOptions="Center">
+                        <StackLayout HorizontalOptions="Center">
+                            <Button Clicked="Button_Clicked_1" Text="Противопоказания" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            <Button Clicked="Button_Clicked_1" Text="Расшифровка Анализов" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                        </StackLayout>
+                    </ContentView>
+                    <ContentView HorizontalOptions="Center">
+                        <StackLayout HorizontalOptions="Center">
+                            <Button Clicked="Button_Clicked_1" Text="Противопоказания" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            <Button Clicked="Button_Clicked_1" Text="Расшифровка Анализов" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                        </StackLayout>
+                    </ContentView>
+                    <ContentView HorizontalOptions="Center">
+                        <StackLayout HorizontalOptions="Center">
+                            <Button Clicked="Button_Clicked_1" Text="Противопоказания" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            <Button Clicked="Button_Clicked_1" Text="Расшифровка Анализов" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                        </StackLayout>
+                    </ContentView>
+                    <ContentView HorizontalOptions="Center">
+                        <StackLayout HorizontalOptions="Center">
+                            <Button Clicked="Button_Clicked_1" Text="Противопоказания" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            <Button Clicked="Button_Clicked_1" Text="Расшифровка Анализов" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                        </StackLayout>
+                    </ContentView>
+                    <ContentView HorizontalOptions="Center">
+                        <StackLayout HorizontalOptions="Center">
+                            <Button Clicked="Button_Clicked_1" Text="Противопоказания" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                            <Button Clicked="Button_Clicked_1" Text="Расшифровка Анализов" TextTransform="None" TextColor="#2f2f2f" FontFamily="Jost1" FontSize="18" BorderWidth="1" BorderColor="Black" CornerRadius="10" WidthRequest="370" BackgroundColor="AliceBlue" HeightRequest="60" Padding="20" Margin="10"/>
+                        </StackLayout>
+                    </ContentView>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>

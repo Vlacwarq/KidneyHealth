@@ -18,11 +18,11 @@
     <Grid>
         <ContentView BackgroundColor="Transparent">
             <StackLayout>
-                <Label FontFamily="Jost1" WidthRequest="410" HorizontalOptions="Center" Text="Зарегистрироваться как:" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67" Padding="0, 70, 0, 0"></Label>
+                <Label FontFamily="Jost1" WidthRequest="410" HorizontalOptions="Center" Text="Register as:" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#1B2C67" Padding="0, 70, 0, 0"></Label>
                 <Image Source="https://i.imgur.com/Wf5kQWr.png" WidthRequest="450" HeightRequest="275" HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 82, 0, 0"></Image>
 
-                <Button FontFamily="Jost1" Clicked="Button_Clicked" BackgroundColor="#6587FF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Мед. учереждение" TextColor="#FFFFFF" Margin="0, 50, 0, 0" CornerRadius='6' ></Button>
-                <Button FontFamily="Jost1" Clicked="Button_Clicked_1" BackgroundColor="#FFFFFF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Пациент" TextColor="#6587FF" Margin="0, 20, 0, 0" BorderColor="#6587FF" BorderWidth="2" CornerRadius="6" ></Button>
+                <Button FontFamily="Jost1" Clicked="Button_Clicked" BackgroundColor="#6587FF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Hospital | Medical Care organisation" TextColor="#FFFFFF" Margin="0, 50, 0, 0" CornerRadius='6' ></Button>
+                <Button FontFamily="Jost1" Clicked="Button_Clicked_1" BackgroundColor="#FFFFFF" HorizontalOptions="Center" WidthRequest="311" HeightRequest="52" Text="Patient" TextColor="#6587FF" Margin="0, 20, 0, 0" BorderColor="#6587FF" BorderWidth="2" CornerRadius="6" ></Button>
             </StackLayout>
         </ContentView>
     </Grid>
